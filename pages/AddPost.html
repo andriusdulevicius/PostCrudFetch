@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../js/app.js" defer type="module"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Post_Crud_Fetch</title>
+  </head>
+  <body>
+    <main class="container add-posts-page">
+      <div class="form-part">
+        <h1 class="display-4">Add post</h1>
+        <form id="add-post-form">
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="Enter your title"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="body" class="form-label">Post text</label>
+            <textarea required class="form-control" id="body" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-info">Create Post</button>
+        </form>
+      </div>
+      <!-- sukurti mygtuka kuri paspaudus paslepiam forma ir rodo zinutne  -->
+      <!-- padaryti kad issiuntu forma ir gavus atsakyma mes paslepiam pacia forma  -->
+      <!-- pasislepus formai rodom padekos zinute -->
+      <div class="form-success d-none">
+        <h1 class="display-4">Thank you Your post was created</h1>
+        <p class="subtitle">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta, ad tenetur
+          repudiandae deserunt animi dolore dignissimos nulla veniam aut eligendi facere sed.
+          Commodi similique ducimus nulla iusto veniam impedit.
+        </p>
+        <button class="btn btn-success another-post-btn">Create another post</button>
+      </div>
+    </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
